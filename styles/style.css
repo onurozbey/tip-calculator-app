@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: #c5e4e7;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo {
+  margin: 5rem 0 3.5rem 0;
+}
+
+.card {
+  background-color: white;
+  width: 100%;
+  border-radius: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3rem;
+  padding: 2.5rem;
+}
+
+.card .input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+.card .input .label-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.card .input .label-wrapper label {
+  color: #7f9c9f;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card .input .label-wrapper .error-message {
+  color: indianred;
+  font-size: 1.5rem;
+  font-weight: 700;
+  opacity: 0;
+}
+
+.card .input .label-wrapper .show-error-message {
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+.card .input .input-text {
+  color: #f4fafa;
+  border: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  color: #00494d;
+  font-family: "Space Mono", monospace;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: right;
+  padding: 0.5rem 2.5rem;
+}
+
+.card .input .input-text:focus {
+  outline: none;
+  border: 2px solid #26c0ab;
+}
+
+.card .input .input-wrapper {
+  position: relative;
+}
+
+.card .input .input-wrapper img {
+  position: absolute;
+  left: 2.5rem;
+  top: 1.5rem;
+}
+
+.card .input .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.card .input .button-wrapper .button {
+  width: 45%;
+  text-align: center;
+  color: white;
+  background-color: #00494d;
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.card .input .button-wrapper .button:hover {
+  background-color: #9fe8df;
+}
+
+.card .input .button-wrapper .button-active {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.card .input .button-wrapper .input-text {
+  width: 45%;
+}
+
+.card .output {
+  background-color: #00494d;
+  width: 100%;
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+
+.card .output .line-wrapper .line-output {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1.5rem 0 2.5rem 0;
+}
+
+.card .output .line-wrapper .line-output .title {
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.card .output .line-wrapper .line-output .description {
+  color: #5e7a7d;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.card .output .line-wrapper .line-output .value {
+  color: #26c0ab;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.card .output .button {
+  width: 100%;
+  background-color: #26c0ab;
+  text-transform: uppercase;
+  text-align: center;
+  color: #00494d;
+  font-weight: 700;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  padding: 1rem 0;
+  margin-top: 3.5rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.card .output .button:hover {
+  background-color: #9fe8df;
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 65%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-radius: 2.5rem;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    padding: 3.5rem;
+    gap: 1.5rem;
+    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05), 0px, 20px, 30px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05), 0px, 20px, 30px rgba(0, 0, 0, 0.05);
+  }
+  .card .input {
+    width: 105%;
+    padding: 0 3.5rem 1.5rem 1.5rem;
+  }
+  .card .input .label-wrapper {
+    padding: 1rem 0;
+  }
+  .card .input .button-wrapper .button {
+    width: 30%;
+  }
+  .card .input .button-wrapper .input-text {
+    width: 30%;
+  }
+  .card .output {
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 4rem;
+  }
+  .card .output .line-wrapper .line-output {
+    margin: 0.5rem 0 2.5rem 0;
+  }
+  .card .output .line-wrapper .line-output .value {
+    font-size: 4.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
