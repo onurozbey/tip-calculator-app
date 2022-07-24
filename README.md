@@ -27,12 +27,22 @@ Users should be able to:
 
 #### Mobile view screenshots
 
-![](./images/screenshots/media_375px_1.png)
-![](./images/screenshots/media_375px_2.png)
+#### Before calculation
+
+<img src="./images/screenshots/media_375px_1.png" width="375" />
+
+#### After calculation
+
+<img src="./images/screenshots/media_375px_2.png" width="375" />
 
 #### Desktop view screenshots
 
+#### Before calculation
+
 ![](./images/screenshots/media_1440px_1.png)
+
+#### After calculation
+
 ![](./images/screenshots/media_1440px_2.png)
 
 ### Links
